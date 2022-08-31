@@ -18,19 +18,19 @@
   box-sizing: border-box;
 }
 
-/* @font-face {
+@font-face {
      font-family: 'S-CoreDream-3Light';
      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
      font-weight: normal;
      font-style: normal;
-} */
+}
 
-@font-face {
+/* @font-face {
     font-family: 'LeferiPoint-WhiteObliqueA';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 html {
   box-sizing: border-box;
@@ -42,8 +42,9 @@ img {
 }
 
 :root {
-  --body-font:     
-  'LeferiPoint-WhiteObliqueA';
+  --body-font:    
+  'S-CoreDream-3Light'; 
+  /* 'LeferiPoint-WhiteObliqueA'; */
   /* "Inter", sans-serif; */
   --theme-bg: #1f1d2b;
   --body-color: #808191;
@@ -1286,6 +1287,7 @@ $(function () {
   $(".main-container").scrollTop(0);
  });
  $(".video").on("click", function (e) {
+
   // $(".main-container").addClass("show");
   $(".main-container").scrollTop(0);
   // $(".sidebar-link").removeClass("is-active");
@@ -1588,9 +1590,27 @@ $(function(){
                 </button>
                </div>
               </div>
-              <div class="video-p-title anim" style="--delay: .2s">HALLOIWEEN</div>
-              <div class="video-p-subtitle anim" style="--delay: .3s">내용 소개 </div>
-              <div class="video-p-subtitle anim" style="--delay: .4s">줄거리</div>
+              <div class="video-p-title anim" style="--delay: .2s">H A L L O W E E N</div>
+
+              <div class="video-p-subtitle anim" style="--delay: .3s">
+              
+                <!-- 홀 인 더 그라운드  -->
+                <p><b>그날 이후, 내 아이가 바뀌었다.<br><br>
+                </b></p> </div>
+              <div class="video-p-subtitle anim" style="--delay: .4s">
+                <p>하나 뿐인 딸 ‘크리스’와 새로운 삶을 살기 위해<br>
+                  한 시골 마을로 이사온 ‘사라’.<br><br>
+
+                딸을 따라 집 근처의 숲으로 들어갔다가<br>
+                의문의 커다란 싱크홀을 발견하고, 알 수 없는 공포감에 사로잡힌다.<br><br>
+                
+                그날 이후, 밤마다 기이한 행동을 하는 딸을 목격한 ‘사라’는<br>
+                크리스의 존재에 의심을 품게 되고,<br>
+                모든 사건이 싱크홀과 연관되었음을 직감하는데….<br><br><br>
+                
+                
+               <b>잠들어 있던 악마가 깨어났다!</b> 
+                </p></div>
              </div>
             </div>
            </div>
@@ -1612,7 +1632,8 @@ $(function(){
                </div>
                <div class="msg-wrapper">
                 <div class="msg__name video-p-name"> 이도현</div>
-                <div class="msg__content video-p-sub"> Dancing on the hood in the middle of the woods</div>
+                <div class="msg__content video-p-sub"> 감독이 보여주는 것은, 호러영화 장르에 대한 깊은 이해다. 
+                  별 거 없이, 몇 초 간 지나가는 요소들을 조그맣게 한번 보여주는 것으로, 섬찟한 공포를 자아낸다. </div>
                </div>
               </div>
               <div class="message anim" style="--delay: .2s">
@@ -1624,7 +1645,7 @@ $(function(){
                </div>
                <div class="msg-wrapper">
                 <div class="msg__name video-p-name offline"> 고윤정</div>
-                <div class="msg__content video-p-sub"> On an old Mustang, where we sang</div>
+                <div class="msg__content video-p-sub"> 이 영화에서 이 호러장르는 수단이다. 그 너머에 있는 주제를 드러내기 위한 수단인 것이다. 아주 능란하게 감독은 이것을 해낸다. </div>
                </div>
               </div>
               <div class="message anim" style="--delay: .3s">
@@ -1636,7 +1657,8 @@ $(function(){
                </div>
                <div class="msg-wrapper">
                 <div class="msg__name video-p-name offline"> 한소희</div>
-                <div class="msg__content video-p-sub">Songs with all our childhood friends</div>
+                <div class="msg__content video-p-sub">워낙 영화가 영화다 보니,호불호는 갈릴수 있지만 영상미와 분위기 하나는 기깔났다고 생각되네요.
+                </div>
                </div>
               </div>
               <div class="message anim" style="--delay: .4s">
@@ -1648,7 +1670,8 @@ $(function(){
                </div>
                <div class="msg-wrapper">
                 <div class="msg__name video-p-name"> 고민시</div>
-                <div class="msg__content video-p-sub"> And it went like this, say</div>
+                <div class="msg__content video-p-sub"> 뭔가 이 영화는 이 영화의 분위기 자체를 체험하는 듯한 느낌이었습니다.
+                  스토리는 특별할게 없었지만 화면 연출과 특히나 사운드가 끝장나고 저는 굉장히 무섭게 봤습니다.</div>
                </div>
               </div>
               <div class="message anim" style="--delay: .5s">
@@ -1660,7 +1683,7 @@ $(function(){
                </div>
                <div class="msg-wrapper">
                 <div class="msg__name video-p-name"> 박규영</div>
-                <div class="msg__content video-p-sub"> Dancing on the hood in the middle of the woods</div>
+                <div class="msg__content video-p-sub"> 제가 원래 공포 영화를 좋아하질 않는 편인데 이 영화는 굉장히 무서웠지만 기분 좋게 몰입해서 봤습니다.</div>
                </div>
               </div>
               <div class="message anim" style="--delay: .6s">
@@ -1672,7 +1695,7 @@ $(function(){
                </div>
                <div class="msg-wrapper">
                 <div class="msg__name video-p-name offline"> 이학주</div>
-                <div class="msg__content video-p-sub"> On an old Mustang, where we sang</div>
+                <div class="msg__content video-p-sub"> 그 일반적인 공포영화 특유의 억지스러운 공포 분위기로 몰아가는 듯한 느낌이 아닌 그냥 사람이 느낄 수 있는 본연의 원초적인 공포를 끌어내는 느낌이라 기분나쁘지 않고 너무 좋았습니다.</div>
                </div>
               </div>
              </div>
