@@ -56,8 +56,9 @@ img {
 body {
   font-family: var(--body-font);
   color: var(--body-color);
-  background-image: url("https://images.unsplash.com/photo-1445251836269-d158eaa028a6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1951&q=80");
-  background-image: url(https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80);
+background-image: url("./img/7.png");
+  /* background-image: url("https://images.unsplash.com/photo-1445251836269-d158eaa028a6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1951&q=80");
+  background-image: url(https://images.unsplash.com/photo-1520045892732-304bc3ac5d8e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -517,6 +518,105 @@ body:before {
 .video-wrapper {
   position: relative;
 }
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* .video-wrapper> p {
+  position: absolute;
+
+  top: 10px;
+  right: 50px;
+  font-size: 50px;
+  display: block;
+} */
+
+
+
+
 .video-name {
   color: #fff;
   font-size: 16px;
@@ -1146,6 +1246,9 @@ button.vjs-play-control.vjs-control.vjs-button {
 }
     </style>
 
+
+
+
     <script>
 $(function () {
  $(".sidebar-link").click(function () {
@@ -1182,11 +1285,11 @@ $(function () {
   $(".main-container").removeClass("show");
   $(".main-container").scrollTop(0);
  });
- $(".trending, .video").on("click", function (e) {
-  $(".main-container").addClass("show");
+ $(".video").on("click", function (e) {
+  // $(".main-container").addClass("show");
   $(".main-container").scrollTop(0);
-  $(".sidebar-link").removeClass("is-active");
-  $(".trending").addClass("is-active");
+  // $(".sidebar-link").removeClass("is-active");
+  // $(".trending").addClass("is-active");
  });
 
  $(".video").click(function () {
@@ -1203,7 +1306,18 @@ $(function () {
  });
 });
 
+$(function(){
+  $(".trending").on("click", function (e) {
+  $(".main-container").addClass("show");
+  $(".main-container").scrollTop(0);
+  $(".sidebar-link").removeClass("is-active");
+  $(".trending").addClass("is-active");
+ });
+});
     </script>
+
+
+
 </head>
 <body>
     <div class="container">
@@ -1337,10 +1451,18 @@ $(function () {
           <div class="videos">
            <div class="video anim" style="--delay: .4s">
             <div class="video-time">8 min</div>
-            <div class="video-wrapper">
-                <a target="_blank" href="img/10.png">
-                    <img src="img/10.png" alt="">
+            <div class="video-wrapper">    
+                <a target="_blank" href="img/5.png"> 
+                       <!-- <p>x</p> -->
+                    <img src="img/5.png" alt="">
                 </a>
+
+
+
+
+    
+    
+         
                 <!-- <video muted="">
                  <source src="img/10.png" type="video/mp4">
                 </video> -->
@@ -1361,6 +1483,7 @@ $(function () {
                 <a target="_blank" href="img/10.png">
                     <img src="img/10.png" alt="">
                 </a>
+               
              <!-- <video muted="">
               <source src="img/10.png" type="video/mp4">
              </video> -->
@@ -1371,6 +1494,18 @@ $(function () {
               <img class="author-img" src="https://i.pinimg.com/564x/b3/96/39/b39639a7ecf700450510414256bcf4a9.jpg" />
              </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="video-by offline">No. 2</div>
             <div class="video-name">On an old Mustang, where we sang</div>
             <div class="video-view">42K views<span class="seperate video-seperate"></span>1 week ago</div>
