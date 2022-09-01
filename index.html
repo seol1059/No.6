@@ -384,7 +384,7 @@ body:before {
   margin-bottom: 30px;
 }
 .main-blog {
-  background-image: url("./img/10.png");
+  background-image: url("./img/11.png");
   background-size: cover;
   background-position: center;
   /* background-position-x: 150px; */
@@ -400,12 +400,15 @@ body:before {
   transition: background 0.3s;
   background-repeat: no-repeat;
 }
+
+
+
 .main-blog + .main-blog {
   margin-left: 20px;
   width: 35%;
-  background-image: url("./img/10.png");
+  background-image: url("./img/99.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: inherit;
   background-color: unset;
   /* background-position-x: 0; */
   /* background-size: 139%; */
@@ -518,7 +521,17 @@ body:before {
 }
 .video-wrapper {
   position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.video-wrapper a img {    
+  max-width: 100%;
+    /* height: 225px; */
+    height: 180px;
+    margin: 0 auto;}
 
 #myImg {
   border-radius: 5px;
@@ -1416,8 +1429,8 @@ $(function(){
           <div class="main-header anim" style="--delay: 0s">WEB DESIGN</div>
           <div class="main-blogs">
            <div class="main-blog anim" style="--delay: .1s">
-            <div class="main-blog__title">WEB<br><br><br>
-                PAGE</div>
+            <div class="main-blog__title">
+              POSTER<br><br><br></div>
             <div class="main-blog__author">
              <div class="author-img__wrapper">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
@@ -1433,7 +1446,7 @@ $(function(){
             <div class="main-blog__time">7 min</div>
            </div>
            <div class="main-blog anim" style="--delay: .2s">
-            <div class="main-blog__title">WEB<br><br> PAGE</div>
+            <div class="main-blog__title">POSTER<br><br></div>
             <div class="main-blog__author tips">
              <div class="main-blog__time">7 min</div>
              <div class="author-img__wrapper">
@@ -1482,8 +1495,8 @@ $(function(){
            <div class="video anim" style="--delay: .5s">
             <div class="video-time">5 min</div>
             <div class="video-wrapper">
-                <a target="_blank" href="img/10.png">
-                    <img src="img/10.png" alt="">
+                <a target="_blank" href="img/4.png">
+                    <img src="img/4.png" alt="">
                 </a>
                
              <!-- <video muted="">
@@ -1499,15 +1512,6 @@ $(function(){
 
 
 
-
-
-
-
-
-
-
-
-
             <div class="video-by offline">No. 2</div>
             <div class="video-name">On an old Mustang, where we sang</div>
             <div class="video-view">42K views<span class="seperate video-seperate"></span>1 week ago</div>
@@ -1515,8 +1519,8 @@ $(function(){
            <div class="video anim" style="--delay: .6s">
             <div class="video-time">7 min</div>
             <div class="video-wrapper">
-                <a target="_blank" href="img/10.png">
-                    <img src="img/10.png" alt="">
+                <a target="_blank" href="img/6.png">
+                    <img src="img/6.png" alt="">
                 </a>
                 <!-- <video muted="">
                  <source src="img/10.png" type="video/mp4">
@@ -1535,8 +1539,8 @@ $(function(){
            <div class="video anim" style="--delay: .7s">
             <div class="video-time">6 min</div>
             <div class="video-wrapper">
-                <a target="_blank" href="img/10.png">
-                    <img src="img/10.png" alt="">
+                <a target="_blank" href="img/moos.png">
+                    <img src="img/moos.png" alt="">
                 </a>
                 <!-- <video muted="">
                  <source src="img/10.png" type="video/mp4">
